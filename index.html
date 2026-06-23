@@ -818,10 +818,10 @@ const NEWAY_CONFIG = {
 (function(){
   /* ---------- dados do quiz (reaproveitados do diagnóstico) ---------- */
   const QUESTIONS=[
-    {id:"ticket",qualifier:true,q:"Qual o seu ticket médio?",s:"Valor médio por pedido.",o:[
+    {id:"ticket",qualifier:true,q:"Qual seu ticket médio?",s:"Valor médio por pedido.",o:[
       {label:"Até R$ 100",value:"ate_100"},{label:"R$ 100 a R$ 300",value:"100_300"},
       {label:"R$ 300 a R$ 600",value:"300_600"},{label:"Acima de R$ 600",value:"acima_600"}]},
-    {id:"vendas_mes",qualifier:true,q:"Quantas vendas você faz em média por mês?",s:"Pedidos nos últimos 3 meses.",o:[
+    {id:"vendas_mes",qualifier:true,q:"Quantidade de vendas no mês?",s:"Pedidos nos últimos 3 meses.",o:[
       {label:"Até 100",value:"ate_100v"},{label:"100 a 500",value:"100_500v"},
       {label:"500 a 2 mil",value:"500_2k"},{label:"Acima de 2 mil",value:"acima_2k"}]},
     {id:"tracking",q:"Como está o rastreamento de conversão?",s:"Pixel e API de Conversão (CAPI).",o:[
@@ -835,7 +835,7 @@ const NEWAY_CONFIG = {
     {id:"fluxos",q:"Você tem fluxos automáticos (e‑mail e/ou WhatsApp)?",s:"Boas‑vindas, carrinho, pós‑venda.",o:[
       {label:"Sim, fluxos completos ativos",pts:15},{label:"Apenas alguns fluxos básicos",pts:7},
       {label:"Não tenho automações ativas",pts:0}]},
-    {id:"recorrencia",q:"Quanto das suas vendas vêm de clientes recorrentes?",s:"Recompras dos últimos 90 dias.",o:[
+    {id:"recorrencia",q:"Quantas das vendas vêm de clientes recorrentes?",s:"Recompras dos últimos 90 dias.",o:[
       {label:"Acima de 30%",pts:10},{label:"Entre 15% e 30%",pts:6},{label:"Abaixo de 15% ou não acompanho",pts:0}]},
     {id:"ltvcac",q:"Qual a relação LTV / CAC da operação?",s:"Valor no tempo ÷ custo de aquisição.",o:[
       {label:"Acima de 3",pts:15},{label:"Entre 1,5 e 3",pts:8},{label:"Abaixo de 1,5 ou não sei calcular",pts:0}]},
