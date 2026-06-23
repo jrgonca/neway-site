@@ -429,7 +429,9 @@ body.chatting .cur,body.chatting .cur-r{opacity:0!important}
 .pill{flex:1;min-width:150px}
 .pill b{font-family:var(--display);color:var(--cyan);font-size:15px;display:block;margin-bottom:5px}
 .pill span{color:var(--muted);font-size:13.5px;line-height:1.5}
-.lpform{background:linear-gradient(165deg,rgba(11,20,51,.6),rgba(5,8,20,.3));border:1px solid var(--line2);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:13px;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.lpform{background:linear-gradient(165deg,rgba(11,20,51,.6),rgba(5,8,20,.3));border:1px solid var(--line2);border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:11px 14px;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.lpform .full{grid-column:1 / -1}
+@media(max-width:560px){.lpform{grid-template-columns:1fr}}
 .lpform h3{font-family:var(--display);font-size:21px;font-weight:600}
 .lpform .sub{color:var(--muted);font-size:14px;margin:-6px 0 6px}
 .lpform label{font-size:12px;color:var(--muted);margin-bottom:-7px}
@@ -479,17 +481,17 @@ body.chatting .cur,body.chatting .cur-r{opacity:0!important}
       </div>
     </div>
     <form class="lpform" id="form">
-      <h3>Preencha e fale com nosso time</h3>
-      <p class="sub">Preencha seus dados e fale com nosso time no WhatsApp.</p>
+      <h3 class="full">Preencha e fale com nosso time</h3>
+      <p class="sub full">Preencha seus dados e fale com nosso time no WhatsApp.</p>
       <div><label>Nome*</label><input name="name" placeholder="Seu nome" required></div>
       <div><label>Empresa</label><input name="company" placeholder="Nome da sua loja"></div>
       <div><label>E-mail*</label><input name="email" type="email" placeholder="voce@suaempresa.com.br" required></div>
       <div><label>Telefone / WhatsApp*</label><input name="phone" placeholder="(11) 99999-9999" required></div>
-      <div><label>Site ou Instagram</label><input name="site" placeholder="https://... ou @seuperfil"></div>
-      <div><label>O que sua empresa precisa</label><textarea name="need" placeholder="Conte rapidamente seu cenário"></textarea></div>
-      <label class="consent"><input type="checkbox" name="consent" required><span>Ao enviar, você concorda com o tratamento de dados para esta finalidade (LGPD).</span></label>
-      <div class="err">Preencha nome, e-mail, WhatsApp e o aceite.</div>
-      <button type="submit" class="btn btn-primary">Receber contato de um especialista →</button>
+      <div class="full"><label>Site ou Instagram</label><input name="site" placeholder="https://... ou @seuperfil"></div>
+      <div class="full"><label>O que sua empresa precisa</label><textarea name="need" placeholder="Conte rapidamente seu cenário"></textarea></div>
+      <label class="consent full"><input type="checkbox" name="consent" required><span>Ao enviar, você concorda com o tratamento de dados para esta finalidade (LGPD).</span></label>
+      <div class="err full">Preencha nome, e-mail, WhatsApp e o aceite.</div>
+      <button type="submit" class="btn btn-primary full">Receber contato de um especialista →</button>
     </form>
   </div></div>
 </section>
